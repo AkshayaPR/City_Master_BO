@@ -1,0 +1,20 @@
+validationregex:
+  alphabets: '^[a-zA-Z ]+$'
+  alphaNumeric: '^[a-zA-Z0-9 ]+$'
+  alphaNumericWithoutSpecialandOnlyNumeric: "^[^'\"]*[a-zA-Z]+([0-9])*[^'\"]*$"
+  alphaNumericWithSpecialCharacters: "^[^'\"]+$"
+  alphaNumericWithSpecialComma: '^[0-9a-zA-Z ,]+$'
+  alphaNumericWithSpecialHyphen: '^[0-9a-zA-Z -]+$'
+  alphaSpecial: '^[ A-Za-z_@.,\/#&+-]*$'
+  decimalNumber: '^[0-9]+.{0,1}[0-9]+$'
+  dpId: '[A-Za-z]{2}([0-9]){6}'
+  email: '^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$'
+  faxNumber: '^[ 0-9*#+-]+$'
+  numberHyphen: '^[0-9]+(-[0-9]+)+$'
+  mobile: '^[ 0-9*#+-]+$'
+  numeric: '^[0-9]+'
+  pan: '[A-Za-z]{5}[0-9]{4}[A-Za-z]{1}'
+  pincode: '^[0-9 _-]+$'
+  primaryKey: '^[a-zA-Z0-9\\-_]+$'
+  ratio: '^[0-9]+.{0,1}[0-9]*:{1}[0-9]+.{0,1}[0-9]*$'
+  telePhoneNumber: '^[ 0-9*#+-]+$'

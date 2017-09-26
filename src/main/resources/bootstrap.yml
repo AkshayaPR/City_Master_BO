@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: ${name}stalk
+  cloud:
+    config:
+      name: stalk
+      env: default
+      label: master
+      uri: http://genie:8000
+name: ''
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      label: development
+name: ${devhost}-
+---
+spring:
+  profiles: test
+  cloud:
+    config:
+      label: testing
+name: test-
+---
+spring:
+  profiles: uat
+  cloud:
+    config:
+      label: uat
+name: uat-
